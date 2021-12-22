@@ -15,18 +15,15 @@ after_success:
   - echo "Test success"
 
 deploy:
-  skip_cleanup: true
   provider: elasticbeanstalk
   region: "us-east-2"
   app: "react-app-docker"
   env: "Reactappdocker-env"
   bucket_name: "elasticbeanstalk-us-east-2-781583917643"
   bucket_path: "react-app-docker"
-
   on:
     branch: main
 
   access_key_id: $AWS_ACCESS_KEY
-  secret_access_key: &3
-    secure: $AWS_SECRET_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
 
