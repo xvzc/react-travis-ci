@@ -15,6 +15,7 @@ after_success:
   - echo "Test success"
 
 deploy:
+  skip_cleanup: true
   provider: elasticbeanstalk
   region: "us-east-2"
   app: "react-app"
