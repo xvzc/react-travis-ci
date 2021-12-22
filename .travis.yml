@@ -18,11 +18,10 @@ deploy:
   skip_cleanup: true
   provider: elasticbeanstalk
   region: "us-east-2"
-  app: "react-app"
-  env: "Reactapp-env"
+  app: "react-app-docker"
+  env: "Reactappdocker-env"
   bucket_name: "elasticbeanstalk-us-east-2-781583917643"
-  bucket_path: "react-app"
-
+  bucket_path: "react-app-docker"
   on:
     branch: main
 
